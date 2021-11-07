@@ -9,7 +9,7 @@
     "background": {
         "service_worker": "background.js"
       },
-      "permissions": ["storage", "tabs","activeTab","background"],
+      "permissions": ["storage", "tabs","activeTab","background", "scripting"],
 
       "content_scripts": [
         {
@@ -18,5 +18,9 @@
           "run_at": "document_end",
           "js": ["contentScript.js"]
         }
-      ]
+      ],
+
+      "host_permissions": [
+        "https://www.netflix.com/*"
+    ]
   }
