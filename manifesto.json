@@ -1,1 +1,6 @@
-murat
+{
+    "name": "Netflix imdb score finder",
+    "description": "Find film imdb score!!",
+    "version": "1.0",
+    "manifest_version": 3
+  }
